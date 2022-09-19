@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a2a43;
+  font-family: Poppins, Georgia, 'Times New Roman', Times, sans-serif;
+}
+
+main {
+  height: 100vh;
+}
+
+p {
+  margin: 0.3rem;
+}
+
+header {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+}
+
+section {
+  display: flex;
+  padding: 0.4rem;
+  background-image: url(wisdom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80%;
+}
+
+section .words-container, section .words {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+section .words-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+}
+
+section .words {
+  color: #0a2a43;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+@media screen and (max-width: 750px) {
+  section, .words-container {
+    display: block;
+  }
+  main {
+    height: 100%;
+  }
+  header {
+    height: 15rem;
+    text-align: center;
+  }
+  section {
+    height: 80%;
+  }
+  section .words-container {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
